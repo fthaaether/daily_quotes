@@ -32,12 +32,45 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.all(20),
-                child: Center(child: const Card(
-                  color: Color.fromARGB(255, 0, 33, 91),
-                )),
+              Card(
+                color: Color.fromARGB(255, 0, 33, 91),
+                child: SizedBox(
+                  height: 400,
+                  width: 400,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "It always seems impossible until it's done",
+                        style: TextStyle(color: Colors.amber, fontSize: 20),
+                      ),
+                      SizedBox(height: 20),
+                      Text(
+                        "- Nelson Mandela",
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      ),
+                    ],
+                  ),
+                ),
               ),
+              // Container(
+              //   margin: EdgeInsets.all(20),
+              //   child: Center(
+              //     child: const Card(
+              //       child: Column(
+              //         child: Center(
+              //           child: Text(
+              //             "It always seems impossible until it's done",
+              //             style: TextStyle(color: Colors.amber, fontSize: 20),
+              //           ),
+              //         ),
+              //         height: 400,
+              //         width: 400,
+              //       ),
+              //       color: Color.fromARGB(255, 0, 33, 91),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),
