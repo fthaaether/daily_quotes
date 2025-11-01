@@ -53,6 +53,21 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
               ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 0, 33, 91),
+                  foregroundColor: Colors.white,
+                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                onPressed: () {
+                  
+                },
+                child: Text('Other Quotes'),
+              ),
+
               // Container(
               //   margin: EdgeInsets.all(20),
               //   child: Center(
