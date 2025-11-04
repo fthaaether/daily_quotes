@@ -24,9 +24,9 @@ class DailyQuotes extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(40),
                 child: Center(
-                  child: const Text(
+                  child: Text(
                     "Quote of The Day",
-                    style: GoogleFonts.lato(
+                    style: GoogleFonts.poppins(
                       textStyle: const TextStyle(
                         color: Color.fromARGB(255, 0, 33, 91),
                         fontSize: 25,
@@ -45,7 +45,12 @@ class DailyQuotes extends StatelessWidget {
                     children: [
                       Text(
                         "It always seems impossible until it's done",
-                        style: TextStyle(color: Colors.amber, fontSize: 20),
+                        style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                            color: Color.fromARGB(255, 217, 255, 0),
+                            fontSize: 30,
+                          ),
+                        ),
                       ),
                       SizedBox(height: 20),
                       Text(
