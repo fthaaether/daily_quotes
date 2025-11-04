@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const DailyQuotes());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class DailyQuotes extends StatelessWidget {
+  const DailyQuotes({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +26,11 @@ class MainApp extends StatelessWidget {
                 child: Center(
                   child: const Text(
                     "Quote of The Day",
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 0, 33, 91),
-                      fontSize: 25,
+                    style: GoogleFonts.lato(
+                      textStyle: const TextStyle(
+                        color: Color.fromARGB(255, 0, 33, 91),
+                        fontSize: 25,
+                      ),
                     ),
                   ),
                 ),
@@ -62,30 +65,9 @@ class MainApp extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                   ),
                 ),
-                onPressed: () {
-                  
-                },
+                onPressed: () {},
                 child: Text('Other Quotes'),
               ),
-
-              // Container(
-              //   margin: EdgeInsets.all(20),
-              //   child: Center(
-              //     child: const Card(
-              //       child: Column(
-              //         child: Center(
-              //           child: Text(
-              //             "It always seems impossible until it's done",
-              //             style: TextStyle(color: Colors.amber, fontSize: 20),
-              //           ),
-              //         ),
-              //         height: 400,
-              //         width: 400,
-              //       ),
-              //       color: Color.fromARGB(255, 0, 33, 91),
-              //     ),
-              //   ),
-              // ),
             ],
           ),
         ),
